@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculatorstyle.css" type="text/css"/>
+    <link rel="stylesheet" href="calculatorutility.css" type="text/css"/>
+</head>
+<body>
+    <center>
+    <h1 class="text-center">calculator</h1></center>
+    <div class = "container flex flex-col item-center bg-grey mx-auto m-w-20"> 
+        <center>  <div class = "row"> <input type="text"></div> </center> 
+        <div class = "row">
+         <button class = "button">7</button>
+         <button class = "button">8</button>
+         <button class = "button">9</button>
+         <button class = "button">+</button>
+     </div>    
+     <div class = "row">
+        <button class = "button">4</button>
+        <button class = "button">5</button>
+        <button class = "button">6</button>
+        <button class = "button">-</button>
+    </div>  
+    <div class = "row">
+        <button class = "button">1</button>
+        <button class = "button">2</button>
+        <button class = "button">3</button>
+        <button class = "button">/</button>
+    </div>  
+    <div class = "row">
+        <button class = "button">0</button>
+        <button class = "button">*</button>
+        <button class = "button">.</button>
+        <button class = "button">x</button>
+    </div>   
+    </div>
+      
+    <script >
+ // Function that display value
+ function dis(val) {
+            document.getElementById("result").value += val
+        }
+  
+        function myFunction(event) {
+            if (event.key == '0' || event.key == '1' 
+                || event.key == '2' || event.key == '3'
+                || event.key == '4' || event.key == '5' 
+                || event.key == '6' || event.key == '7'
+                || event.key == '8' || event.key == '9' 
+                || event.key == '+' || event.key == '-'
+                || event.key == '*' || event.key == '/')
+                document.getElementById("result").value += event.key;
+        }
+  
+        var cal = document.getElementById("calcu");
+        cal.onkeyup = function (event) {
+            if (event.keyCode === 13) {
+                console.log("Enter");
+                let x = document.getElementById("result").value
+                console.log(x);
+                solve();
+            }
+        }
+  
+        // Function that evaluates the digit and return result
+        function solve() {
+            let x = document.getElementById("result").value
+            let y = eval(x);
+            document.getElementById("result").value = y
+        }
+  
+        // Function that clear the display
+        function clr() {
+            document.getElementById("result").value = ""
+        }
+
+    </script>
+</body>
+</html>  

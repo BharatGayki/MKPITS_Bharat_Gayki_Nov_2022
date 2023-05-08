@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url('doctor1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    transform: rotate(0deg); /* rotate the container */
+  }
+  h1 {
+    color: #1a1a1a;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  h2 {
+    color: #1a1a1a;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .requirements, .address, .contact {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 20px;
+    transform: rotate(0deg); /* rotate each box */
+  }
+  .requirements {
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+  }
+  .address {
+    margin-top: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+    margin-bottom: 20px;
+  }
+  .contact {
+    margin-top: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+  }
+
+  /* New styles for ladder layout */
+  .requirements {
+    transform: translate(0, -30px);
+  }
+  .address {
+    transform: translate(0, -15px);
+  }

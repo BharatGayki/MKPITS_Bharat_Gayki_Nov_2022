@@ -1,0 +1,23 @@
+/* this is universal selector
+  margin 0;
+*/
+
+h1{
+    color:aqua
+}
+
+.p_tag{
+    color: violet
+}
+
+.red{
+    color:red
+}
+
+.brown{
+    color:brown
+}
+
+.h2{
+    color:black
+}

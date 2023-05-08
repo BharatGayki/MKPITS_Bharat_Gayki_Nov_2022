@@ -1,0 +1,9 @@
+a{
+
+    color: green;
+    text-decoration: none;
+}
+a:active{
+
+    color:blue;
+}
